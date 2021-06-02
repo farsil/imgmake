@@ -480,7 +480,7 @@ void options_tofsspec(const options *opts, imgspec *img) {
                       : (fs->vsize / fs->spc * 2L + 511L) / 512L;
 
         if (fs->fatsize > 65536L) {
-            fputs("Error: Generated filesystem has more than 64KB sectors per FAT.\n", stderr);
+            fputs("Error: Generated filesystem has more than 64K sectors per FAT.\n", stderr);
             exit(EC_INV_FATSIZE);
         }
 
