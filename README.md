@@ -9,7 +9,7 @@ but it is perfectly possible to compile it on any POSIX system. As it is a
 single file, building `imgmake` is as simple as invoking:
 
 ```sh
-$ gcc imgmake.c -o imgmake
+$ gcc imgmake.c -D_POSIX_SOURCE -o imgmake
 ```
 
 If you are using Borland C++ 3.1, load the `imgmake.c` file in the IDE, 
